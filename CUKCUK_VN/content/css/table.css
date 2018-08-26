@@ -1,0 +1,250 @@
+
+/* CSS for tieu de */
+.content-title {
+    right: auto;
+    left: 0px;
+    top: 0px;
+    height: 40px;
+    max-width: 900px;
+}
+.danh-muc-item {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 36px;
+}
+.danh-muc-before {
+    font-size: 25px;
+    margin-left: 10px;
+}
+.danh-muc-after {
+    background: url("../images/IconSprite.png") no-repeat;
+    background-position: 0 -1014px; 
+    background-size: 13px auto;
+    width: 13px;
+    height: 12px;
+    margin-right: 8px;
+}
+.the-loai-danh-muc {
+    color: #0072bc;
+    font-size: 18px;
+}
+/* Table chua danh sách */
+.frmCustomerList {
+    border: 1px solid #ccc;
+    background-color: #ededed;
+    position: absolute;
+    top: 50px;
+    left: 8px;
+    bottom: 8px;
+    right: 8px;
+}
+.toolbar {
+    height: 27px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.toolbar-item {
+    display: inline-block;
+    margin: 2px 1px;
+    padding: 2px 0 2px 5px;
+    border: 1px solid #ededed;
+    cursor: pointer;
+}
+.toolbar-item:hover {
+    background-color: #fff;
+    border: 1px solid #01609b;
+}
+.toolbar-item-btn-wrap {
+    display: table;
+}
+.toolbar-item-icon {
+    background-image: url("../images/IconSprite.png");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 16px;
+    display: table-cell;
+}
+.icon-btn-them {
+    background-position:  0 -2648px !important;
+}
+.icon-btn-nhan-ban {
+    background-position:  0 -1888px !important;
+}
+.icon-btn-sua {
+    background-image: url("../images/Edit16.png") !important;
+}
+.icon-btn-xoa {
+    background-position:  0 -2680px !important;
+}
+.icon-btn-nap {
+    background-position:  0 -2584px !important;
+}
+.toolbar-item-text {
+    display: table-cell;
+    padding-right: 10px;
+}
+/* table */
+.cls-gridPanel {
+    position: absolute;
+    bottom: 27px;
+    top: 27px;
+    left: 0px;
+    right: 0px;
+    overflow: auto;
+}
+#tblCustomerList {
+    border: 1px solid #ccc;
+}
+table, th, tr, td, thead, tbody {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+.width-200 {
+    min-width: 200px !important;
+    max-width: 200px !important;
+}
+.width-150 {
+    min-width: 150px !important;
+    max-width: 150px !important;
+}
+.width-155 {
+    width: 155px !important;
+}
+.width-100 {
+    width: 100px !important;
+}
+.customer-list-header-item {
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px !important;
+    padding: 6px;
+}
+.filter-table {
+    height: 28px;
+    padding: 2px;
+}
+.filter-in-header-item {
+    padding: 4px 10px;
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    background-color: #fcfcfc;
+    cursor: pointer;
+}
+.filter-in-header-item:hover {
+    border: 1px solid #fbb13c;
+    background-color: #eef6fb;
+}
+.filter-input-in-header-item {
+    height: 21px;
+    margin-right: 8px;
+}
+#tbdCustomerlist {
+    background-color: #fff;
+}
+#tbdCustomerList tr {
+    height: 24px !important;
+    background-color: #fff;
+    cursor: context-menu;
+}
+#tbdCustomerList tr:hover {
+    background-color: #c1ddf1;
+}
+#tbdCustomerList tr td {
+    padding-left: 10px;
+    font-size: 13px !important;
+}
+#tbdCustomerList .row-highlight {
+    background-color: #fafafa;
+}
+#tbdCustomerList .active {
+    background-color: #c1ddf1;
+}
+/* css for table footer */
+#table-footer {
+    position: absolute;
+    bottom: 0;
+    height: 27px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    color: gray;
+    font-size: 13px !important;
+}
+#table-footer .left {
+    float: left;
+}
+#table-footer .right {
+    float: right;
+    margin-right: 40px;
+    position: relative;
+    top: 5px;
+}
+#table-footer .inline-item {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#table-footer .icon-item {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    opacity: 0.5;
+}
+#table-footer .return-first-icon {
+    background-image: url("../images/grid/page-first.png");
+}
+#table-footer .goto-last-icon {
+    background-image: url("../images/grid/page-last.png");
+}
+#table-footer .refresh-icon {
+    background-image: url("../images/grid/refresh.png");
+}
+#table-footer .forward-icon {
+    background-image: url("../images/grid/page-next.png");
+}
+#table-footer .back-icon {
+    background-image: url("../images/grid/page-prev.png");
+}
+#number-in-page {
+    height: 22px;
+    cursor: pointer;
+    width: 50px;
+    padding-left: 5px;
+}
+.filter-box {
+    position: absolute;
+    z-index: 9999;
+    width: 145px;
+    font-weight: 300 !important;
+    font-size: 13px !important;
+    min-height: 120px;
+    background-color: #fff;
+    box-shadow: #e1e1e1 0px 0px 1px;
+    border: 1px solid #e1e1e1;
+    margin-left: 10px;
+}
+.filter-box a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px 5px 30px;
+    text-align: left;
+    cursor: pointer;
+}
+.filter-box a:hover {
+    background-color: #c1ddf1;
+}
+.filter-box .circle-icon {
+    background: url("../images/table-circle-blue16.png") no-repeat;
+    background-position: 8px 6px;
+}
+.filter-box .circle-icon span {
+    position: relative;
+    top: 3px;
+}

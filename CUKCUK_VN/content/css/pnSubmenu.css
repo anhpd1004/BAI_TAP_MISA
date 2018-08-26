@@ -1,0 +1,101 @@
+.clear-fix {
+    clear: both;
+}
+#danh-muc-sub-menu {
+    display: block;
+    position: absolute;
+    left: 250px;
+    top: 55px;
+    background: #fff !important;
+    margin-left: -15px;
+    padding-left: 15px;
+    z-index: 1000;
+    height: calc(100% - 55px);
+    height: -moz-calc(100% - 55px);
+    height: -webkit-calc(100% - 55px);
+    border-color: #157fcc;
+    right: auto;
+}
+.pn-sub-menu {
+    height: calc(100% - 20px);
+    background: #fff;
+    padding: 20px 30px 0 0;
+    box-shadow: 4px 4px 4px #a5a5a5;
+}
+.pn-sub-menu .col-haft {
+    padding: 0px 10px;
+}
+.pn-sub-menu .col-left {
+    float: left;
+}
+.pn-sub-menu .col-right {
+    float: left;
+}
+.pn-sub-menu .item {
+    margin: 8px 35px 8px 0;
+}
+.pn-sub-menu .child-item {
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    color: #212121;
+    position: relative;
+}
+.pn-sub-menu .group {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 0 center;
+    padding-left: 40px;
+    color: #0072bb;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+}
+.pn-sub-menu .InventoryItem {
+    background-image: url("../icons/InventoryItem.png") !important;
+}
+.pn-sub-menu .CustomerVendorEmployee {
+    background-image: url("../icons/CustomerVendorEmployee.png") !important;
+}
+.pn-sub-menu .InventoryItemMaterial {
+    background-image: url("../icons/InventoryItemMaterial.png") !important;
+}
+.pn-sub-menu .OtherDictionary {
+    background-image: url("../icons/OtherDictionary.png") !important;
+}
+.pn-sub-menu .child-node {
+    display: table-cell;
+    vertical-align: middle;
+}
+.pn-sub-menu .line {
+    position: absolute;
+    border-style: solid;
+    border-color: #dadada;
+    left: 10px;
+}
+.pn-sub-menu .line-1 {
+    height: 30px;
+    top: 5px;
+    border-width: 0 0 0 1px;
+}
+.pn-sub-menu .last-line {
+    height: 15px;
+}
+.pn-sub-menu .line-2 {
+    width: 25px;
+    top: 19px;
+    border-width: 0px 0 1px 0;
+}
+.pn-sub-menu .child-content {
+    display: table-cell;
+    position: relative;
+    left: 35px;
+    top: 3px;
+    padding: 5px;
+    border: 0.5px solid #fff;
+    font-size: 13px !important;
+}
+.pn-sub-menu .child-content:hover {
+    background-color: #e6f3fb;
+    border: 0.5px solid #43a3d5;
+}

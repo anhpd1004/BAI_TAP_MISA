@@ -1,0 +1,163 @@
+<div style="display: block;">
+    <form action="#">
+        <!-- hidden input forn data -->
+        
+        <!-- tieu de -->
+        <div class="content-title">
+            <span class="danh-muc-before danh-muc-item">Danh mục</span>
+            <span class="danh-muc-after danh-muc-item"></span>
+            <span class="the-loai-danh-muc danh-muc-item">Khách hàng</span>
+        </div>
+        <!-- list of custommers -->
+        <div class="frmCustomerList">
+            <!-- toolbar -->
+            <div class="toolbar">
+                <!-- toolbar -body -->
+                <div class="toolbar-body">
+                    <!-- them -->
+                    <a id="btnThem" class="toolbar-item">
+                        <span class="toolbar-item-btn-wrap">
+                            <span class="toolbar-item-icon icon-btn-them"></span>
+                            <span class="toolbar-item-text">Thêm</span> 
+                        </span>
+                    </a>
+                    <!-- nhan ban -->
+                    <a id="btnNhanBan" class="toolbar-item">
+                        <span class="toolbar-item-btn-wrap">
+                            <span class="toolbar-item-icon icon-btn-nhan-ban"></span>
+                            <span class="toolbar-item-text">Nhân bản</span> 
+                        </span>
+                    </a>
+                    <!-- sua -->
+                    <a id="btnSua" class="toolbar-item">
+                        <span class="toolbar-item-btn-wrap">
+                            <span class="toolbar-item-icon icon-btn-sua"></span>
+                            <span class="toolbar-item-text">Sửa</span> 
+                        </span>
+                    </a>
+                    <!-- xoa -->
+                    <a id="btnXoa" class="toolbar-item">
+                        <span class="toolbar-item-btn-wrap">
+                            <span class="toolbar-item-icon icon-btn-xoa"></span>
+                            <span class="toolbar-item-text">Xóa</span> 
+                        </span>
+                    </a>
+                    <!-- nap -->
+                    <a id="btnNap" class="toolbar-item">
+                        <span class="toolbar-item-btn-wrap">
+                            <span class="toolbar-item-icon icon-btn-nap"></span>
+                            <span class="toolbar-item-text">Nạp</span> 
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- cls-gridPanel -->
+            <!-- ------------------ -->
+            <!-- --------------- -->
+            <!-- ------------------- -->
+            <div class="cls-gridPanel">
+                <table id="tblCustomerList">
+                    <thead>
+                        <tr>
+                            <th class="customer-list-header-item width-150">Mã khách hàng</th>
+                            <th class="customer-list-header-item width-200">Tên khách hàng</th>
+                            <th class="customer-list-header-item width-200">Tên công ty</th>
+                            <th class="customer-list-header-item width-150">Mã số thuế</th>
+                            <th class="customer-list-header-item width-200">Địa chỉ</th>
+                            <th class="customer-list-header-item width-150">Số điện thoại</th>
+                            <th class="customer-list-header-item width-200">Email</th>
+                            <th class="customer-list-header-item width-200">Mã thẻ thành viên</th>
+                            <th class="customer-list-header-item width-150">Hạng thẻ</th>
+                            <th class="customer-list-header-item width-150">Số tiền nợ</th>
+                            <th class="customer-list-header-item width-200">Ghi chú</th>
+                            <th class="customer-list-header-item width-150">Thành viên 5Food</th>
+                            <th class="customer-list-header-item width-150">Ngừng theo dõi</th>
+                        </tr>
+                        <tr class="input-tr">
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Mã khách hàng">*</a>
+                                <input type="text" class="filter-input-in-header-item width-100">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Tên khách hàng">*</a>
+                                <input type="text" class="filter-input-in-header-item width-150">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Tên công ty">*</a>
+                                <input type="text" class="filter-input-in-header-item width-150">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Mã số thuế">*</a>
+                                <input type="text" class="filter-input-in-header-item width-100">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Địa chỉ">*</a>
+                                <input type="text" class="filter-input-in-header-item width-150">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Số điện thoại">*</a>
+                                <input type="text" class="filter-input-in-header-item width-100">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Email">*</a>
+                                <input type="text" class="filter-input-in-header-item width-150">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Mã thẻ thành viên">*</a>
+                                <input type="text" class="filter-input-in-header-item width-150">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Hạng thẻ">*</a>
+                                <input type="text" class="filter-input-in-header-item width-100">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Số tiền nợ">*</a>
+                                <input type="text" class="filter-input-in-header-item width-100">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Ghi chú">*</a>
+                                <input type="text" class="filter-input-in-header-item width-150">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Thành viên 5Food">*</a>
+                                <input type="text" class="filter-input-in-header-item width-100">
+                            </th>
+                            <th class="filter-table">
+                                <a class="filter-in-header-item" filterName="Ngừng theo dõi">*</a>
+                                <input type="text" class="filter-input-in-header-item width-100">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbdCustomerList">
+                        <!-- data here -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="table-footer">
+                <div class="left">
+                    <div class="return-first-icon inline-item icon-item"></div>
+                    <div class="back-icon inline-item icon-item"></div>
+                    <span class="ngan-cach-cac-item">|</span>
+                    Trang 
+                    <input class="current-page inline-item" type="number" min="1" value="1" style="padding-left: 5px;height: 18px; width: 35px;">
+                    trên 
+                    <span class="total-page"></span>
+                    <span class="ngan-cach-cac-item">|</span>
+                    <div class="forward-icon inline-item icon-item"></div>
+                    <div class="goto-last-icon inline-item icon-item"></div>
+                    <span class="ngan-cach-cac-item">|</span>
+                    <div class="refresh-icon inline-item icon-item"></div>
+                    <span class="ngan-cach-cac-item">|</span>
+                    <select name="" id="number-in-page" class="inline-item">
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+                <div class="right">
+                    Hiển thị <span class="from-to-customers"></span> trên <span class="total-customers"></span> kết quả
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

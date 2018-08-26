@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face { font-family: TahomaCustom; src: url('../../font/Tahoma_Regular.woff');}
+@font-face { font-family: Fontello; src: url('../../font/fontello.woff');}
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: TahomaCustom !important;
+    font-size: 13px;
+    height: 100%;
+    width: 100%;
+    line-height: 1.5;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+}
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+.clearfix {
+    clear: both;
+}
+/* CSS FOR HEADER */
+.header {
+    background-color: #0973b9;
+    width: 100%;
+    height: 55px;
+}
+.logo-header {
+    float: left;
+    width: 232px;
+    height: 100%;
+}
+.header-info {
+    float: left;
+    width: calc(100% - 232px);
+    width: -moz-calc(100% - 232px);
+    width: -webkit-calc(100% - 232px);
+}
+.logo-header-box {
+    display: table;
+    height: 30px;
+    width: 100%;
+    margin: 12px 0 13px 3px;
+}
+/* icon-logo -left */
+.icon-left-logo-header {
+    background: url("../images/icon-left-header.png") no-repeat #0973b9;
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    float: left;
+    margin-top: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.text-left-header {
+    background: url("../images/logo-text.png") no-repeat #0973b9;
+    width: 100%;
+    height: 30px;
+    background-position: 2px center;
+    display: table-cell;
+    cursor: pointer;
+}
+.header-combobox-item {
+    display: table;
+    width: 250px;
+    height: 32px;
+    margin: 12px 0 3px 10px;
+}
+/* header-info */
+.combobox-content {
+    background-color: #005082;
+    width: calc(100% -32px);
+    height: 100%;
+    display: table-cell;
+}
+.combobox-input {
+    border-style: none;
+    background-color: #005082;
+    color: #fff;
+    line-height: 26px;
+    padding: 3px 5px !important;
+    font-size: 13px;
+    cursor: text;
+}
+.combobox-arrow-trigger {
+    background: url("../images/default-small-arrow.png") no-repeat #005082;
+    width: 22px;
+    height: 32px;
+    background-position: 0 center;
+    display: table-cell;
+    cursor: pointer;
+}
+/* header-info-left */
+.header-info-left {
+    float: left;
+}
+ /* header-info-right  */
+.header-info-right {
+    float: right;
+}
+.header-info-right-item {
+    float: left;
+}
+.notice-icon-earth {
+    background-image: url("../images/earth.png");
+    background-repeat: no-repeat;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 17px 20px;
+    background-size: 20px 20px;
+}
+.account-box {
+    cursor: pointer;
+}
+/* account info */
+.header-account {
+    margin-right: 10px;
+}
+.list-language {
+    width: 165px !important;
+}
+.list-language-input {
+    width: calc(165px - 32px) !important;
+}
+/* account profile */
+.account-item {
+    display: inline-block;
+    margin-top: 13px;
+}
+.account-profile {
+    background: url("../images/EmployeeImage.png") no-repeat #fff;
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 5px;
+    min-height: 5px;
+    float: left;
+    border-radius: 50%;
+    background-position: 2px 0;
+    margin-right: 10px;
+}
+.account-display-info {
+    color: #fff;
+    padding: 4px;
+}
+.account-arrow-trigger {
+    background: url("../images/default-small-arrow.png") no-repeat #0973b9;
+    width: 16px;
+    height: 16px;
+    background-position: 0 4px;
+    margin-right: 10px;
+}
+/* CSS FOR BODY */
+/* CSS FOR SIDEBAR */
+.sidebar {
+    position: absolute;
+    top: 55px;
+    right: auto;
+    left: 0;
+    width: 230px;
+    background-color: #0973b9;
+    height: calc(100% - 55px);
+    height: -moz-calc(100% - 55px);
+    height: -webkit-calc(100% - 55px);
+    color: #fff;
+    margin: 0;
+}
+.dropdown-menu {
+    list-style-type: none;
+
+}
+.menu-item {
+    width: 230px;
+}
+.menu-item a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #005082;
+    border-bottom: 0.1px solid #0198fca1;
+    text-decoration: none;
+}
+.add-arrow-icon {
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: 210px 12px;
+}
+.menu-item a:hover {
+    background-color: #eb7728 !important;
+    background-image: none;
+}
+.cls-menu-right {
+    color: white;
+    font-weight: 300;
+}
+.cls-icon-menu {
+    background: url("../images/iconMenu.png") no-repeat;
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: -4px 10px 0 10px;
+}
+.cls-tongquan {
+    background-position: 0 0;
+}
+.cls-report {
+    background-position: 0 -192px;
+}
+.cls-khuuyenmai {
+    background-position: 0px -118px;
+}
+.cls-list {
+    background-position: 0 -155px;
+}
+.cls-settings {
+    background-position: 0 -233px;
+}
+.cls-help {
+    background-image: url("../images/iconHelp.png") !important;
+}
+.cls-thuebao {
+    background-image: url("../images/icon-subscriber.png") !important;background-position: 0 0;
+}
+.cls-5food {
+    background-image: url("../images/5food.png") !important;
+}
+.menu-arrow-right {
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    float: right;
+    z-index: 100;
+}
+.cls-icon-none {    
+    background-position: 0 100px;
+}
+.report-dropdown-item, .help-dropdown-item {
+    background-color: #005082;
+    border-top: 1px solid #0973b9;
+    display: none;
+}
+.add-arrow-icon-click {
+    background-image: url("../images/iconMenu.png");
+    background-position: 202px -290px;
+    background-repeat: no-repeat;
+}
+.active-item {
+    background-color: #0199fc;
+}
+/* CSS FOR CONTENT */
+.content {
+    position: absolute;
+    right: 0px;
+    left: 230px;
+    top: 55px;
+    bottom: 0px;
+    margin: 0px;
+    height: calc(100% - 55px);
+    height: -moz-calc(100% - 55px);
+    height: -webkit-calc(100% - 55px);
+    border-color: #157fcc;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    line-height: 17px;
+}
+/* css cho loading data */
+#img-loading-data {
+    position: fixed;
+    top: calc(50% - 50px + 55px/2);
+    left: calc(50% - 50px + 230px/2);
+    z-index: 99999;
+}

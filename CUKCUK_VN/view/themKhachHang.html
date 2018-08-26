@@ -1,0 +1,94 @@
+<!-- form nhập dữ liệu từ người dùng -->
+<div class="form-input-data">
+    <!-- title của form -->
+    <div class="form-title">
+        <!-- Nội dung title -->
+        <div class="form-title-text">Thông tin khách hàng</div>
+        <!-- button cancel nhập liệu -->
+            <div class="img-icon"></div>
+    </div>
+    <div style="clear: both;"></div>
+    <!-- các textbox nhập liệu -->
+    <div class="form-input-textbox">
+        <div class="input-item input-item-left">
+            <div class="label-for-input label-left">Mã khách hàng<span class="important-red"> (*)</span></div>
+            <input type="text" maxlength="20" value="KH00001" class="input-data input-left inline check-required">
+        </div>
+        <div class="input-item input-item-right">
+                <div class="label-for-input label-right">Tên khách hàng<span class="important-red"> (*)</span></div>
+                <input type="text" class="input-data inline  check-required">
+        </div>
+        <div style="clear: both;"></div>
+        <div class="input-item input-item-left">
+                <div class="label-for-input label-left">Nhóm khách hàng</div>
+                <!-- <input type="text" class="input-data input-left inline"> -->
+                <div class="div-custommer-group">
+                    <select name="" class="custommer-group" id="" value="3">
+                        <option value="3"></option>
+                        <option value="0">Cá nhân</option>
+                        <option value="1">Tổ chức</option>
+                    </select>
+                    <img src="./content/icons/add-blue-icon.png" alt="" class="add-blue-icon">
+                </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="input-item input-item-left">
+                <div class="label-for-input label-left">Điện thoại di động<span class="important-red"> (*)</span></div>
+                <input type="number" class="input-data input-left check-required">
+        </div>
+        <div style="clear: both;"></div>
+        <div class="input-item input-item-left">
+                <div class="label-for-input label-left">Ngày sinh</div>
+                <input type="date" class="input-data input-birthday">
+        </div>
+        <div style="clear: both;"></div>
+        <div class="input-item input-item-left">
+                <div class="label-for-input label-left">Tên công ty</div>
+                <input type="text" class="input-data input-left  input-long">
+        </div>
+        <div style="clear: both;"></div>
+        <div class="input-item input-item-left">
+                <div class="label-for-input label-left">Mã số thuế</div>
+                <input type="text" class="input-data input-left">
+        </div>
+        <div class="input-item input-item-right">
+                <div class="label-for-input label-right">Email</div>
+                <input type="text" class="input-data"id="checkEmail">
+        </div>
+        <div style="clear: both;"></div>
+        <div class="input-item input-item-left">
+                <div class="label-for-input label-left">Địa chỉ</div>
+                <input type="text" class="input-data input-left input-long">
+        </div>
+        <div style="clear: both;"></div>
+        <div class="input-item input-item-left">
+                <div class="label-for-input label-left">Ghi chú</div>
+                <textarea class="input-data input-textarea input-left" style="width: 524px; height: 50px;"></textarea>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <!-- các button lưu hủy trợ giúp ... -->
+    <div class="button-bottom">
+        <!-- trái -->
+        <button class="btn btn-left">
+            <img src="./content/icons/iconHelp.png" alt="" class="img-in-btn">
+            
+            <span class="btn-text">Giúp</span>
+        </button>
+        <!-- phải -->  
+        <button class="btn btn-right" id="btnCancel">
+                <img src="./content/icons/Disable16.png" alt="" class="img-in-btn">
+                
+            <span class="btn-text">Hủy bỏ</span>
+            </button>
+            <button class="btn btn-right" id="btnSaveAdd">
+                <img src="./content/icons/SaveAdd16.png" alt="" class="img-in-btn">
+                
+            <span class="btn-text">Cất và thêm</span>
+            </button> 
+        <button class="btn btn-right" id="btnSave">
+            <img src="./content/icons/Save16.png" alt="" class="img-in-btn">
+            <span class="btn-text">Cất</span>
+        </button>
+    </div>
+</div>

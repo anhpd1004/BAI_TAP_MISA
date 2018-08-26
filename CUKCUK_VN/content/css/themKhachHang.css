@@ -1,0 +1,164 @@
+
+.background-fadein {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 10001;
+}
+#them-khach-hang-moi {
+    position: absolute;
+    height: auto;
+    width: 680px;
+    left: calc(50% - 680px/2);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100001;
+    opacity: 1;
+}
+#them-khach-hang-moi .form-input-data {
+    width: 100%;
+    margin: auto;
+    background: #0072bc;
+    padding: 5px;
+    box-shadow: 4px 4px 4px 4px #0c2d42;
+    border-radius: 15px;
+}
+/* form-title */
+#them-khach-hang-moi .form-title {
+    height: 30px;
+    color: #fff;
+    font-weight: normal;
+    cursor: move;
+}
+#them-khach-hang-moi .form-title-text {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    top: 4px;
+}
+#them-khach-hang-moi .img-icon {
+    float: right;
+    margin: 2px 10px 0 0; 
+    width: 16px;
+    height: 16px;
+    background: url("../icons/tool-sprites.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+}
+#them-khach-hang-moi .img-in-btn {
+    position: relative;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px 0 10px;
+}
+#them-khach-hang-moi .btn-text {
+    position: relative;
+    bottom: 2px;
+    margin: 0 10px 0 0;
+}
+/* form-input */
+#them-khach-hang-moi .form-input-textbox {
+    width: 100%;
+    background-color: white;
+    padding-bottom: 20px;
+}
+#them-khach-hang-moi .important-red {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#them-khach-hang-moi .input-item-left {
+    float: left;
+}
+#them-khach-hang-moi .input-item-right {
+    float: right;
+    margin-right: 15px;
+}
+#them-khach-hang-moi .input-data {
+    height: 22px;
+    float: left;
+    width: 160px;
+    position: relative;
+    top: 10px;
+    border: 1px solid #c1c1c1;
+    font-size: 13px !important;
+    padding-left: 5px;
+}
+#them-khach-hang-moi .div-custommer-group {
+    border-width: 1px;
+    border-style: inset;
+    border-color: initial;
+    height: 22px;
+    float: left;
+    width: 160px;
+    position: relative;
+    top: 7px;
+}
+#them-khach-hang-moi .custommer-group {
+    width: 136px;
+    border: none;
+    height: 22px;
+}
+#them-khach-hang-moi .add-blue-icon {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -4px;
+}
+#them-khach-hang-moi .exclamation {
+    width: 16px;
+    height: 16px;
+    background: url("../icons/exclamation.png") no-repeat #fff;
+    float: left;
+    position: relative;
+    top: 12px;
+    margin-left: 5px;
+}
+#them-khach-hang-moi .label-for-input {
+    margin: 5px;
+    float: left;
+    width: 130px;
+    position: relative;
+    top: 5px;
+}
+#them-khach-hang-moi .input-textarea {
+    height: 50px;
+}
+#them-khach-hang-moi .input-long {
+    width: 523px
+}
+/* button */
+#them-khach-hang-moi .button-bottom {
+    background-color: white;
+    height: 40px;
+    border-radius: 0 0 15px 15px;
+}
+#them-khach-hang-moi .btn {
+    height: 25px;
+    margin: 5px 10px;
+    background: #fff;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+#them-khach-hang-moi .btn:hover {
+    background: #e8f1eb;
+    border: 1px solid #0071c1;
+}
+#them-khach-hang-moi .btn-left {
+    float: left;
+}
+#them-khach-hang-moi .btn-left img {
+    background: blue;
+}
+#them-khach-hang-moi .btn-right {
+    float: right;
+}
+#them-khach-hang-moi .border-red {
+    border: 1px solid red !important;
+}
+#them-khach-hang-moi .border-blue {
+    border: 1px solid #157fcc;
+}
