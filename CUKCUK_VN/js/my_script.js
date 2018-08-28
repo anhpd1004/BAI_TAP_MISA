@@ -1,25 +1,18 @@
 $(document).ready(function () {
-    //flag = 1: show;
-    //flag = 0: hide;
-    var flag = false;
+    var dropdownName = "className";
     $(".add-arrow-icon").click(function() {
-        var dropdownName = "."+$(this).attr("dropdownName");
-        var arrays = $(".add-arrow-icon");
-        $.each(arrays, function (i, v) { 
-            var temp = "." + $(v).attr("dropdownName");
-             if(temp !== dropdownName) {
-                 $(temp).hide(200);
-                 $(v).removeClass("add-arrow-icon-click");
-             } else if(!flag){
-                $(temp).show(200);
-                $(v).addClass("add-arrow-icon-click");
-                flag = ~flag;
-             } else {
-                $(temp).hide(200);
-                $(v).removeClass("add-arrow-icon-click");
-                flag = ~flag;
-             }
-        });
+        $("[dropdownName='" + dropdownName + "']").removeClass("add-arrow-icon-click");
+        $('.' + dropdownName).hide();
+        dropdownName = $(this).attr("dropdownName");
+        var checkShow = $(this).hasClass("add-arrow-icon-click");
+        debugger;
+        if(checkShow) {
+            $(this).removeClass("add-arrow-icon-click");
+            $('.' + dropdownName).hide();
+        } else {
+            $(this).addClass("add-arrow-icon-click");
+            $('.' + dropdownName).show();
+        }
     });
     //doi mau back-ground item sidebar khi click
     $(".menu-item a").click(function() {

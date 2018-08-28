@@ -14,21 +14,24 @@ $(document).ready(function () {
     });
     $(document).on("change", "#number-in-page", function() {
         var xxx = $(this).val();
-        $(".total-page").text(Math.ceil(numberKH / xxx));
-        $(".current-page").attr("max", Math.ceil(numberKH / xxx));
-        var currentPage = $(".current-page").val();
+        var totalPage = Math.ceil(numberKH / xxx);
+        $(".total-page").text(totalPage);
+        $(".current-page").attr("max", totalPage);
+        var currentPage = $(".current-page").val() > totalPage ? totalPage : $(".current-page").val();
+        $(".current-page").val(currentPage);
         var y = (currentPage - 1) * xxx * 24 + 63;
         $(".cls-gridPanel").scrollTop(y);
-        var from_to = currentPage === 15 ? (((currentPage-1) * xxx + 1) + " - " + numberKH) : (((currentPage - 1) * xxx + 1) + " - " + currentPage * xxx);
+        var from_to = (currentPage >= totalPage) ? (((totalPage-1) * xxx + 1) + " - " + numberKH) : (((currentPage - 1) * xxx + 1) + " - " + currentPage * xxx);
         $(".from-to-customers").text(from_to);
     })
     $(document).on("change", ".current-page", function() {
         var xxx = $(this).val();
         var cusPerPages = $("#number-in-page").val();
+        var totalPage = Math.ceil(numberKH / cusPerPages);
         var y = (xxx - 1) * cusPerPages * 24 + 63;
         $(".cls-gridPanel").scrollTop(y);
         debugger;
-        var from_to = xxx === 15 ? (((xxx-1) * cusPerPages + 1) + " - " + numberKH) : (((xxx - 1) * cusPerPages + 1) + " - " + xxx * cusPerPages);
+        var from_to = (xxx >= totalPage) ? (((totalPage-1) * cusPerPages + 1) + " - " + numberKH) : (((xxx - 1) * cusPerPages + 1) + " - " + xxx * cusPerPages);
         $(".from-to-customers").text(from_to);
     })
     $(document).on("click", "#child-item-khach-hang", function(){
@@ -50,10 +53,11 @@ $(document).ready(function () {
                     $("#tbdCustomerList").append(innerTable);
                     $(".total-customers").text(numberKH);
                     var cusPerPages = $("#number-in-page").val();
-                    $(".total-page").text(Math.ceil(numberKH / cusPerPages));
-                    $(".current-page").attr("max", Math.ceil(numberKH / cusPerPages));
+                    var totalPage = Math.ceil(numberKH / cusPerPages);
+                    $(".total-page").text(totalPage);
+                    $(".current-page").attr("max", totalPage);
                     var currentPage = $(".current-page").val();
-                    var from_to = currentPage === 15 ? (((currentPage-1) * cusPerPages + 1) + " - " + numberKH) : (((currentPage - 1) * cusPerPages + 1) + " - " + currentPage * cusPerPages);
+                    var from_to = (currentPage >= totalPage) ? (((totalPage-1) * cusPerPages + 1) + " - " + numberKH) : (((currentPage - 1) * cusPerPages + 1) + " - " + currentPage * cusPerPages);
                     $(".from-to-customers").text(from_to);
                 });
             }
